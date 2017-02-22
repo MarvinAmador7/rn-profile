@@ -99,7 +99,7 @@ ansicolors@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.2.1.tgz#be089599097b74a5c9c4a84a0cdbcdb62bd87aef"
 
-apollo-client@^0.8.7:
+apollo-client@0.8.7:
   version "0.8.7"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-0.8.7.tgz#73f52d1dd6dfe0f07e8bfe05a8e47c4bcd3bf7a3"
   dependencies:
@@ -610,7 +610,7 @@ babel-plugin-transform-flow-strip-types@^6.21.0, babel-plugin-transform-flow-str
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-inline-environment-variables@^0.0.2:
+babel-plugin-transform-inline-environment-variables@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-environment-variables/-/babel-plugin-transform-inline-environment-variables-0.0.2.tgz#1372475c6c87f3c4ce6046587730ee041bc784b9"
 
@@ -797,7 +797,7 @@ babel-register@^6.18.0, babel-register@^6.23.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-remove-process-env-assignment@^0.0.2:
+babel-remove-process-env-assignment@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/babel-remove-process-env-assignment/-/babel-remove-process-env-assignment-0.0.2.tgz#1812391bed89ddc079f46063360e0a178d707dc4"
 
@@ -2324,11 +2324,11 @@ image-size@^0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.3.5.tgz#83240eab2fb5b00b04aab8c74b0471e9cba7ad8c"
 
-immutable-devtools@^0.0.7:
+immutable-devtools@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/immutable-devtools/-/immutable-devtools-0.0.7.tgz#da0fbdd860c3a8a598967fc544bb0329ec3ad26e"
 
-immutable@^3.8.1:
+immutable@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
@@ -2571,7 +2571,7 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -3809,7 +3809,7 @@ react-deep-force-update@^1.0.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react-native-debugger-open@^0.3.2:
+react-native-debugger-open@0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.2.tgz#ac90d33e97ab9aa9f815eb8c9f6f9efb4a09a733"
   dependencies:
@@ -3939,7 +3939,7 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-redux@^5.0.2:
+react-redux@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.2.tgz#3d9878f5f71c6fafcd45de1fbb162ea31f389814"
   dependencies:
@@ -4036,7 +4036,7 @@ redeyed@~1.0.0:
   dependencies:
     esprima "~3.0.0"
 
-redux-devtools-extension@^2.13.0:
+redux-devtools-extension@2.13.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.0.tgz#c8300d72630c00999302526204d47c360cc0637f"
 
@@ -4105,7 +4105,7 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-remote-redux-devtools-on-debugger@^0.7.0:
+remote-redux-devtools-on-debugger@0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/remote-redux-devtools-on-debugger/-/remote-redux-devtools-on-debugger-0.7.0.tgz#358cbfa9a66e4f9ff71eaba6a282bd1c4411508d"
   dependencies:
@@ -4963,13 +4963,13 @@ whatwg-encoding@^1.0.1:
   dependencies:
     iconv-lite "0.4.13"
 
-whatwg-fetch@>=0.10.0, whatwg-fetch@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.2.tgz#fe294d1d89e36c5be8b3195057f2e4bc74fc980e"
-
-whatwg-fetch@^1.0.0:
+whatwg-fetch@>=0.10.0, whatwg-fetch@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-1.1.1.tgz#ac3c9d39f320c6dce5339969d054ef43dd333319"
+
+whatwg-fetch@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.2.tgz#fe294d1d89e36c5be8b3195057f2e4bc74fc980e"
 
 whatwg-url@^4.3.0:
   version "4.4.0"

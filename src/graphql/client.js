@@ -9,7 +9,7 @@ const authorizationHeader = {
   applyMiddleware (req, next) {
     if (!req.options.headers) {
       req.options.headers = {};
-      req.options.headers.authorization = 'Bearer [token]';
+      req.options.headers['x-apikey'] = '58ad02f51336925a2571b148';
       next();
     }
     next();

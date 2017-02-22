@@ -16,6 +16,9 @@
     "react",
     "react-native"
   ],
+  "globals": {
+    "fetch": true
+  },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "react-native/no-unused-styles": 2,

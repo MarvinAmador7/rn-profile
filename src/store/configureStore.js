@@ -7,12 +7,16 @@ import {
 } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
+import createSagaMiddleware, { END } from 'redux-saga';
+
 import reducers from '../reducers';
 import apolloClient from '../graphql/client';
 
+const sagaMiddleware = createSagaMiddleware();
 
 const enhancer = composeWithDevTools(
   applyMiddleware(
+    sagaMiddleware,
     apolloClient.middleware(),
     thunk.withExtraArgument(apolloClient)
   ),
@@ -32,5 +36,7 @@ export default function configureStore (initialState) {
     });
   }
 
+  store.runSaga = sagaMiddleware.run;
+  store.close = () => store.dispatch(END);
   return store;
 }

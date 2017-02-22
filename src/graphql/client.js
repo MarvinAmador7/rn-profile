@@ -1,9 +1,9 @@
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
 
-const networkInterface = createNetworkInterface(
-  'https://api.github.com/graphql', {
-    credentials : 'same-origin',
-  });
+const networkInterface = createNetworkInterface({
+  uri         : 'https://api.github.com/graphql',
+  credentials : 'same-origin',
+});
 
 const authorizationHeader = {
   applyMiddleware (req, next) {
